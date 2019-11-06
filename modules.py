@@ -11,7 +11,7 @@ import time
 from time import time
 
 # Pip module | pip3 install camelcase
-from camelcase import CamelCase
+# from camelcase import CamelCase
 
 # Import custom module
 import mymodule
@@ -21,7 +21,7 @@ from mymodule import validate_email
 today = date.today()
 timestamp = time()
 
-c = CamelCase()
+# c = CamelCase()
 # print(c.hump('hello there world'))
 
 email = 'email@email.com'

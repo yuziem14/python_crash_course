@@ -13,12 +13,13 @@ class Person:
     # Constructor
 
     def __init__(self, name, email, birthday):
+        print('Fui instanciado!')
         self.name = name
         self.email = email
         self.birthday = birthday
 
     def greeting(self):
-        return f'My name is {self.name} and I am {self.get_age()}'
+        return 'My name is {} and I am {}'.format(self.name, self.get_age())
 
     def get_age(self):
         return (self.year - self.birthday)
@@ -35,7 +36,7 @@ class Student(Person):
         return self.class_team
 
     def greeting(self):
-        return f'My name is {self.name} and I am {self.get_age()} and my class is {self.class_team}'
+        return 'My name is {} and I am {} and my class is {}'.format(self.name, self.get_age(), self.class_team)
 
 
 #  Init Person object

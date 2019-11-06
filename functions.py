@@ -6,7 +6,7 @@ https://github.com/bradtraversy/python_sandbox
 
 # Create function
 def sayHello(name='Anonymous'):
-    print(f'Hello {name}')
+    print('Hello {}'.format(name))
 
 
 # Return values
@@ -20,5 +20,6 @@ def getSum(num1, num2):
 
 def getSum(num1, num2): return num1 + num2
 
-
+sayHello("John")
+sayHello()
 print(getSum(10, 3))

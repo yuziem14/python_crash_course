@@ -41,6 +41,9 @@ print('Hello {name}. {isMale}. (x, y) = ({x}, {y}). Age: {age}\n'.format(
 
 # Input
 x = float(input('X Input: '))
+# x = int(input('X:'))
+# x = str(input('X'))
+# x = bool(input('X'))
 print('X = {}\n'.format(x))
 
 # Math Operations
