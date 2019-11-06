@@ -14,22 +14,24 @@ x = 10
 y = 10
 
 print('Booleans: ')
-print(x > y)
-print(x == y)
-print(x < y)
+print('\t{}'.format(x > y))
+print('\t{}'.format(x == y))
+print('\t{}'.format(x < y))
 
-print('\Result: ')
+print('\nResult: ')
 if x > y:
-    print('X > Y')
+    print('\tX > Y')
 elif x == y:
-    print('X == Y')
+    print('\tX == Y')
 else:
-    print('X < Y')
+    print('\tX < Y')
 
 print('\n')
 
+print('------------ Inputs ------------')
 language = input('Language: ').capitalize()
 version = input('Version: ')
+print('---------------------------------\n')
 
 if language == 'Python' and version == '3.8':
     print('Version 3.8')
@@ -43,7 +45,11 @@ if not language == 'C':
     print('Not C')
 
 print('\n')
-print(language == 'Python' and version == '3.8')
-print(language == 'Java' or language == 'Python')
-print(language == 'Pascal' or language == 'Javascript')
-print(not language == 'C')
+
+print('Booleans: ')
+print('\t{}'.format(language == 'Python' and version == '3.8'))
+print('\t{}'.format(language == 'Java' or language == 'Python'))
+print('\t{}'.format(language == 'Pascal' or language == 'Javascript'))
+print('\t{}'.format(not language == 'C'))
+
+print('\n')

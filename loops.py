@@ -8,30 +8,30 @@ people = ['John', 'Paul', 'Sara', 'Susan']
 
 # Simple for loop
 for person in people:
-    print(f'Current Person: {person}')
+    print('Current Person: {person}'.format(person=person))
 
 # Break
 for person in people:
     if person == 'Sara':
         break
-    print(f'Current Person: {person}')
+    print('Current Person: {person}'.format(person=person))
 
 # Continue
 for person in people:
     if person == 'Sara':
         continue
-    print(f'Current Person: {person}')
+    print('Current Person: {person}'.format(person=person))
 
 # range
 for i in range(len(people)):
     print(people[i])
 
 for i in range(0, 11):
-    print(f'Number: {i}')
+    print('Number: {i}'.format(i=i))
 
 # While loops execute a set of statements as long as a condition is true.
 
 count = 0
 while count < 10:
-    print(f'Count: {count}')
+    print('Count: {count}'.format(count=count))
     count += 1
